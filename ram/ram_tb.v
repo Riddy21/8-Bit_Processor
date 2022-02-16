@@ -6,12 +6,10 @@ module ram_tb ();
     wire [7:0] data;
     reg [7:0] data_in;
     wire [7:0] data_out;
-    wire [7:0] memory;
-    wire load_clked;
 
     assign data = (dataout_en) ? 8'hz : data_in;
     assign data_out = data;
-    ram inst (addr_in, addr_in_manual, program_mode, addr_clr, clk, addr_en, load_manual, load, dataout_en, data_in_manual, data, memory, load_clked);
+    ram inst (addr_in, addr_in_manual, program_mode, addr_clr, clk, addr_en, load_manual, load, dataout_en, data_in_manual, data);
 
     initial begin
         clk = 0;
@@ -81,6 +79,6 @@ module ram_tb ();
     end
 
     initial
-        $dumpvars(0, addr_in, addr_in_manual, program_mode, addr_clr, clk, addr_en, load_manual, load, dataout_en, data_in_manual, data, data_in, data_out, memory, load_clked);
+        $dumpvars(0, addr_in, addr_in_manual, program_mode, addr_clr, clk, addr_en, load_manual, load, dataout_en, data_in_manual, data, data_in, data_out);
 
 endmodule

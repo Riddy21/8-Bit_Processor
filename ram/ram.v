@@ -21,9 +21,7 @@ module ram (
     input [3:0] addr_in_manual,
     input program_mode, addr_clr, clk, addr_en, load_manual, load, dataout_en,
     input [7:0] data_in_manual,
-    inout wire [7:0] data,
-    output [7:0] data_out,
-    output load_clked
+    inout wire [7:0] data
 ) ;
 
     // Declare the memory and address register
