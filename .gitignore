@@ -1,10 +1,4 @@
-*
-
-!.gitignore
-
-!*.v
-!*.sv
-!*.md
-!*.txt
-!Makefile
-!makefile
+*.vcd
+*.out
+.*.swp
+.DS_Store

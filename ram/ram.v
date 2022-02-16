@@ -69,6 +69,5 @@ module ram (
         if (load_en) memory[addr_in_final] = data_in_final;
 
     assign data = (dataout_en) ? memory[addr_in_final] : 8'bz;
-    assign data_out = memory[addr_in_final];
 
 endmodule
