@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+
+!*.v
+!*.sv
+!*.md
+!*.txt
+!Makefile
+!makefile
